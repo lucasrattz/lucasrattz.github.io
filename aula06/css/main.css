@@ -1,0 +1,15 @@
+/* main.css */
+
+/* base */
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* layout */
+@import './layout/footer.css';
+@import './layout/header.css';
+
+/* pages */
+@import './pages/home.css';
+
+/* utils */
+@import './utils/variables.css';

@@ -1,1 +1,35 @@
-teste
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" type="text/javascript"></script>
+  <link rel="canonical" href="https://rattz.xyz"/>
+  <meta charset="UTF-8">
+  <title>Lucas Rattz</title>
+</head>
+<body>
+    <div id="main-container">
+    <div id="welcome"></div>
+    <p id="subheader">I'm Lucas Rattz and this is my landing page, where I link my active projects and useful links.</p>
+  </div>
+
+  <div id="buttons">
+    <div class="button"><img src="./resources/github.svg" onclick="link(`https://github.com/lucasrattz`)" onauxclick="link(`https://github.com/lucasrattz`)"><p>Github</p></div>
+    <div class="button"><img src="./resources/linkedin.svg" onclick="link(`https://www.linkedin.com/in/lucasrattz/`)" onauxclick="link(`https://github.com/lucasrattz`)"><p>LinkedIn</p></div>
+    <div class="button"><img src="./resources/cv.svg" onclick="link(`https://drive.google.com/drive/folders/1u3vnzuryUcvCNxlGi4YNNg2MFBsM5R8L?usp=sharing`)" onauxclick="link(`https://github.com/lucasrattz`)"><p>Resume</p></div>
+    <div class="button"><img src="./resources/cefetdb.svg" onclick="link(`https://rattz.xyz/cefetdb/`)" onauxclick="link(`https://github.com/lucasrattz`)"><p>CEFETDB</p></div>
+  </div>
+
+  <iframe
+    frameborder="0"
+    height="100%"
+    width="100%"
+    src="./background.html"
+    allowfullscreen="" 
+    style="position:absolute; top:0; left: 0; z-index: -1"
+  >
+  </iframe>
+
+  <!-- Background design by @screenshake -->
+</body>
+</html>

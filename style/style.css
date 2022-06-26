@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Mosk';
+	src: url('./resources/Mosk\ Medium\ 500.ttf');
+}
+
+@font-face {
+	font-family: 'Mosk Light';
+	src: url('./resources/Mosk\ Light\ 300.ttf');
+}
+
+:root {
+	--main-color: #c1cbda;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+} 
+
+#welcome {
+	font-size: 74pt;
+	font-family: Mosk;
+	font-weight: 900;
+	color: var(--main-color);
+	animation: fade 1s;
+
+}
+
+@keyframes fade {
+	from { opacity: 0% }
+	to { opacity: 100% }
+}
+
+#main-container {
+	text-align: center;
+}
+
+#subheader {
+	color: var(--main-color);
+	animation: fade 2s 1.75s forwards,  goUp 1s 1.5s  forwards;
+	opacity: 0%;
+	margin-top: -6vh;
+	font-family: 'Mosk Light';
+	font-size: 20pt;
+	min-width: 400px;
+	max-width: 1000px;
+}
+
+@keyframes goUp {
+	from { margin-top: -6vh }
+	to { margin-top: 0; }
+}
+
+#buttons {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.button {
+	height: 100px;
+	width: 100px;
+	opacity: 0%;
+	margin: 0 35px 0 35px;
+}
+
+.button img {
+	height: 100px;
+	width: 100px;
+	transition: all 0.3s ease-in-out;
+	filter: invert(91%) sepia(5%) saturate(738%) hue-rotate(181deg) brightness(90%) contrast(89%);
+}
+
+.button:first-child {
+	animation: fade 2s 3.5s forwards,  pop .7s 3.5s forwards;
+}
+
+.button:nth-child(2){
+	animation: fade 2s 4s forwards,  pop .7s 4s forwards;
+}
+
+.button:nth-child(3){
+	animation: fade 2s 4.5s forwards,  pop .7s 4.5s forwards;
+}
+
+.button:nth-child(4){
+	animation: fade 2s 5s forwards,  pop .7s 5s forwards;
+}
+
+.button img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(0);
+	}
+	75% {
+		transform: scale(1.1)
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.button p {
+	color: var(--main-color);
+	font-family: 'Mosk';
+	text-align: center;
+	font-size: 13pt;
+}

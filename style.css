@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Mosk';
-	src: url('./resources/Mosk\ Medium\ 500.ttf');
+	src: url('./resources/MoskMedium500.ttf');
 }
 
 @font-face {
 	font-family: 'Mosk Light';
-	src: url('./resources/Mosk\ Light\ 300.ttf');
+	src: url('./resources/MoskLight300.ttf');
 }
 
 :root {
